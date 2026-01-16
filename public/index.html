@@ -18,6 +18,24 @@
       --shadow: 0 1px 2px rgba(0,0,0,0.06);
       --shadowHover: 0 8px 24px rgba(0,0,0,0.10);
       --radius: 14px;
+      .brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: block;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
     }
 
     body {
@@ -197,10 +215,18 @@
   <div class="container">
 
     <div class="topbar">
-      <a class="brand" href="/">ClassSeats Help</a>
-      <!-- Optional: point this to your real app domain later -->
-      <a class="toplink" href="https://app.classseats.app" target="_blank" rel="noopener">Back to ClassSeats</a>
-    </div>
+  <div class="brand-wrap">
+    <a href="https://app.classseats.app" target="_blank" rel="noopener" class="logo-link">
+      <img src="/assets/icon-192.png" alt="ClassSeats" class="logo" />
+    </a>
+    <a class="brand" href="/">ClassSeats Help</a>
+  </div>
+
+  <a class="toplink" href="https://app.classseats.app" target="_blank" rel="noopener">
+    Back to ClassSeats
+  </a>
+</div>
+
 
     <h1>Help &amp; How-To</h1>
     <p class="subtitle">
