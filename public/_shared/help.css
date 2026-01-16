@@ -24,15 +24,25 @@ body {
   margin: 0;
   padding: 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg);
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 40%, #f8fafc 100%);
   color: var(--text);
   line-height: 1.65;
 }
 
 .container {
-  max-width: 760px;
+  max-width: 920px;
   margin: 0 auto;
 }
+
+/* New: card frame for all content pages */
+.page {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  padding: 2rem 2.25rem;
+}
+
 
 /* -------------------------
    Navigation / breadcrumbs
@@ -44,25 +54,41 @@ body {
   margin-bottom: 1rem;
 }
 
-.breadcrumbs a {
-  color: var(--link);
-  text-decoration: none;
-  font-weight: 500;
+.breadcrumbs {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
 }
+
 
 .breadcrumbs a:hover {
   color: var(--link-hover);
 }
+
+/* New: section rhythm so pages don't feel like one long scroll */
+.section {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
 
 /* -------------------------
    Headings & text
    ------------------------- */
 
 h1 {
-  font-size: 1.85rem;
-  margin: 0.25rem 0 0.75rem 0;
+  font-size: 1.75rem;
+  margin: 0.25rem 0 0.6rem 0;
   letter-spacing: -0.015em;
 }
+
 
 h2 {
   font-size: 1.25rem;
