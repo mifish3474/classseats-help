@@ -4,41 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ClassSeats Help</title>
+  <meta name="description" content="ClassSeats Help: short answers, quick demos, and reassurance when things feel confusing." />
 
   <style>
+    :root{
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --link: #4f46e5;
+      --linkHover: #4338ca;
+      --shadow: 0 1px 2px rgba(0,0,0,0.06);
+      --shadowHover: 0 8px 24px rgba(0,0,0,0.10);
+      --radius: 14px;
+    }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 2rem;
-      background: #f8fafc;
-      color: #1f2937;
+      background: var(--bg);
+      color: var(--text);
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
     }
 
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .toplink {
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .toplink:hover { color: var(--text); }
+
     h1 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
+      font-size: 2.15rem;
+      margin: 0 0 0.4rem 0;
+      letter-spacing: -0.02em;
     }
 
     .subtitle {
-      color: #475569;
-      margin-bottom: 2rem;
+      color: var(--muted);
+      margin: 0 0 1.4rem 0;
+      line-height: 1.5;
     }
 
+    .start-here {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem;
+    }
+
+    .start-here strong {
+      white-space: nowrap;
+    }
+
+    .start-here a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .start-here a:hover { color: var(--linkHover); }
+
     .search {
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .search input {
       width: 100%;
-      padding: 0.75rem 1rem;
+      padding: 0.85rem 1rem;
       font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      box-shadow: var(--shadow);
+      outline: none;
+    }
+
+    .search input:focus {
+      border-color: #a5b4fc;
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.18);
+    }
+
+    .hint {
+      margin: 0.5rem 0 1.75rem 0;
+      color: var(--muted);
+      font-size: 0.95rem;
     }
 
     .grid {
@@ -48,75 +121,216 @@
     }
 
     .card {
-      background: white;
-      border-radius: 12px;
+      display: block;
+      background: var(--card);
+      border-radius: var(--radius);
       padding: 1.25rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-      transition: box-shadow 0.15s ease;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
     }
 
     .card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+      box-shadow: var(--shadowHover);
+      border-color: #cbd5e1;
     }
 
     .card h2 {
-      font-size: 1.1rem;
-      margin: 0 0 0.25rem 0;
+      font-size: 1.08rem;
+      margin: 0 0 0.35rem 0;
+      letter-spacing: -0.01em;
     }
 
     .card p {
-      font-size: 0.95rem;
-      color: #475569;
-      margin: 0 0 0.75rem 0;
+      font-size: 0.96rem;
+      color: var(--muted);
+      margin: 0 0 0.9rem 0;
+      line-height: 1.45;
     }
 
-    .card a {
-      font-size: 0.9rem;
-      color: #4f46e5;
-      text-decoration: none;
-      font-weight: 500;
+    .card .cta {
+      font-size: 0.92rem;
+      color: var(--link);
+      font-weight: 600;
+    }
+
+    .empty {
+      display: none;
+      margin: 1.5rem 0 0 0;
+      padding: 1rem;
+      border-radius: 12px;
+      border: 1px dashed var(--border);
+      color: var(--muted);
+      background: #fff;
     }
 
     footer {
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #475569;
+      margin-top: 3.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    footer a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover { color: var(--linkHover); }
+
+    @media (max-width: 600px) {
+      body { padding: 1.25rem; }
+      .start-here { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
+
+    <div class="topbar">
+      <a class="brand" href="/">ClassSeats Help</a>
+      <!-- Optional: point this to your real app domain later -->
+      <a class="toplink" href="https://app.classseats.app" target="_blank" rel="noopener">Back to ClassSeats</a>
+    </div>
 
     <h1>Help &amp; How-To</h1>
     <p class="subtitle">
       Short answers, quick demos, and reassurance when things feel confusing.
     </p>
 
-    <div class="search">
-      <input type="text" placeholder="Search for help (attendance, seating, Drive, printing…)" disabled />
+    <div class="start-here">
+      <strong>New to ClassSeats?</strong>
+      <span>Start with <a href="/getting-started/">Getting Started</a> and <a href="/google-drive-sync/">Google Drive &amp; Sync</a>.</span>
     </div>
 
-    <div class="grid">
-      <div class="card"><h2>Getting Started</h2><p>Learn how ClassSeats works and how to begin at your own pace.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Google Drive &amp; Sync</h2><p>Understand what sync does, when it happens, and how to use mobile safely.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Students &amp; Rosters</h2><p>Add students, import rosters, and manage class lists.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Seating Arrangements</h2><p>Create, edit, and print seating charts and room layouts.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Grouping Students</h2><p>Generate student groups using preferences and constraints.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Attendance &amp; Daily Notes</h2><p>Take attendance and record quick notes during class.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Student Notes</h2><p>Review and manage notes across days and students.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Behavior Points</h2><p>Enable and manage optional behavior point systems.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Printing &amp; Reports</h2><p>Print seating charts, attendance, and reports clearly.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>ClassSeats Mobile</h2><p>Use ClassSeats on your phone or Chromebook.</p><a href="#">View articles →</a></div>
-      <div class="card"><h2>Privacy &amp; Data Safety</h2><p>Learn where your data lives and how it’s protected.</p><a href="#">View articles →</a></div>
+    <div class="search">
+      <input id="searchBox" type="text" placeholder="Search for help (attendance, seating, Drive, printing…)" />
+      <p class="hint" id="hintText">Tip: type a keyword (like “Drive” or “attendance”) to filter sections.</p>
+    </div>
+
+    <div class="grid" id="cards">
+
+      <a class="card" href="/getting-started/" data-keywords="start getting started new setup basics">
+        <h2>Getting Started</h2>
+        <p>Learn how ClassSeats works and how to begin at your own pace.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/google-drive-sync/" data-keywords="drive sync backup mobile offline file">
+        <h2>Google Drive &amp; Sync</h2>
+        <p>Understand what sync does, when it happens, and how to use mobile safely.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/students-rosters/" data-keywords="students rosters import add names class list">
+        <h2>Students &amp; Rosters</h2>
+        <p>Add students, import rosters, and manage class lists.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/seating-arrangements/" data-keywords="seating arrangements charts layout room tables">
+        <h2>Seating Arrangements</h2>
+        <p>Create, edit, and print seating charts and room layouts.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/grouping-students/" data-keywords="grouping groups algorithm preferences constraints partners">
+        <h2>Grouping Students</h2>
+        <p>Generate student groups using preferences and constraints.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/attendance-daily-notes/" data-keywords="attendance daily notes present absent tardy">
+        <h2>Attendance &amp; Daily Notes</h2>
+        <p>Take attendance and record quick notes during class.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/student-notes/" data-keywords="student notes history records documentation">
+        <h2>Student Notes</h2>
+        <p>Review and manage notes across days and students.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/behavior-points/" data-keywords="behavior points rewards consequences tracking">
+        <h2>Behavior Points</h2>
+        <p>Enable and manage optional behavior point systems.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/printing-reports/" data-keywords="printing reports export pdf paper">
+        <h2>Printing &amp; Reports</h2>
+        <p>Print seating charts, attendance, and reports clearly.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/mobile/" data-keywords="mobile phone pwa ios android chromebook">
+        <h2>ClassSeats Mobile</h2>
+        <p>Use ClassSeats on your phone or Chromebook.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+      <a class="card" href="/privacy-data/" data-keywords="privacy data ferpa safety storage">
+        <h2>Privacy &amp; Data Safety</h2>
+        <p>Learn where your data lives and how it’s protected.</p>
+        <div class="cta">View articles →</div>
+      </a>
+
+    </div>
+
+    <div class="empty" id="emptyState">
+      No matches. Try a different keyword (for example: “Drive”, “attendance”, or “printing”).
     </div>
 
     <footer>
-      <p>
-        Still stuck? If something doesn’t look right, you can report a problem here.
-      </p>
+      <div>
+        Still stuck? If something doesn’t look right, you can
+        <!-- Replace this later with a real form link -->
+        <a href="mailto:support@classseats.app?subject=ClassSeats%20Help%20Request">report a problem</a>.
+      </div>
+      <div>
+        <a href="/privacy-data/">Privacy</a> · <a href="/getting-started/">Getting Started</a>
+      </div>
     </footer>
 
   </div>
+
+  <script>
+    (function () {
+      const input = document.getElementById('searchBox');
+      const cards = Array.from(document.querySelectorAll('#cards .card'));
+      const empty = document.getElementById('emptyState');
+
+      function norm(s) {
+        return (s || '').toLowerCase().trim();
+      }
+
+      function filter() {
+        const q = norm(input.value);
+        let shown = 0;
+
+        for (const card of cards) {
+          const hay = norm(card.textContent) + ' ' + norm(card.getAttribute('data-keywords'));
+          const match = q === '' || hay.includes(q);
+          card.style.display = match ? '' : 'none';
+          if (match) shown++;
+        }
+
+        empty.style.display = shown === 0 ? 'block' : 'none';
+      }
+
+      input.addEventListener('input', filter);
+      filter();
+    })();
+  </script>
 </body>
 </html>
-
