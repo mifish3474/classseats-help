@@ -152,3 +152,9 @@ No click/cursor artifacts unless intentional
 Images do not dominate the page
 
 Each media item clearly supports nearby text
+
+How to make this effortless with Codex (recommended)
+
+Tell Codex this once and you’re done:
+
+“If a section contains two or more INLINE media placeholders back-to-back, wrap their generated media-rows in a .media-stack container.”
