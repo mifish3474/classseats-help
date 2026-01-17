@@ -209,3 +209,38 @@ footer a:hover {
     padding: 1.25rem;
   }
 }
+
+/* --- Help media (screenshots + videos) --- */
+figure.media {
+  margin: 16px 0 22px;
+}
+
+figure.media .media-frame {
+  max-width: 920px;          /* keeps media from dominating the page */
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb; /* light gray */
+  border-radius: 14px;
+  padding: 10px;
+}
+
+figure.media img,
+figure.media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figure.media figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #6b7280;            /* slate/gray */
+  text-align: center;
+  line-height: 1.35;
+}
+
+/* Optional: give videos a slightly more "player" feel without drama */
+figure.media video {
+  background: #0b0b0b;
+}
