@@ -245,13 +245,11 @@ figure.media video {
   background: #0b0b0b;
 }
 
-/* Inline media: supports nearby text without dominating */
-figure.media.inline {
-  max-width: 520px;
+/* Inline media rows grouped for safe alternation */
+.media-stack {
   margin: 0;
 }
 
-/* Inline media row: keeps a screenshot aligned with its specific subsection */
 .media-row {
   display: grid;
   grid-template-columns: 1fr;
@@ -260,29 +258,24 @@ figure.media.inline {
   margin: 12px 0 18px;
 }
 
+/* Desktop layout with controlled alternation */
 @media (min-width: 900px) {
-  .media-row {
+  .media-stack .media-row {
     grid-template-columns: 1fr 520px;
     gap: 20px;
   }
 
-  .media-row > :first-child {
-    grid-column: 1;
-  }
-
-  .media-row > figure {
-    grid-column: 2;
-  }
-
-  .media-row:nth-of-type(even) {
+  .media-stack .media-row:nth-child(even) {
     grid-template-columns: 520px 1fr;
   }
 
-  .media-row:nth-of-type(even) > :first-child {
-    grid-column: 2;
+  .media-stack .media-row:nth-child(even) figure.media {
+    order: -1;
   }
+}
 
-  .media-row:nth-of-type(even) > figure {
-    grid-column: 1;
-  }
+/* Inline media should constrain width only (no floats) */
+figure.media.inline {
+  max-width: 520px;
+  margin: 0;
 }
