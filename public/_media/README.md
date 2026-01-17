@@ -158,3 +158,120 @@ How to make this effortless with Codex (recommended)
 Tell Codex this once and you’re done:
 
 “If a section contains two or more INLINE media placeholders back-to-back, wrap their generated media-rows in a .media-stack container.”
+
+CODEX GENERIC PROMPT:
+
+YOU ARE CODEX WORKING IN THE ClassSeats help site repo.
+
+GOAL
+Insert captured media files into ONE help article using existing MEDIA placeholders.
+Follow the established media system (full-width vs inline) without redesigning anything.
+
+HARD CONSTRAINTS
+- Static HTML only. No frameworks, no build steps.
+- Do NOT rewrite copy or headings.
+- Do NOT touch layout shell, breadcrumbs, or Next links.
+- Do NOT touch public/index.html.
+- Only modify the single page listed below.
+- Only replace existing <!-- MEDIA ... --> placeholders.
+
+SCOPE (ONLY THIS FILE)
+- public/<SECTION>/<PAGE>/index.html
+
+MEDIA LOCATION
+- All media files for this page are located in:
+  public/_media/<SECTION>/<PAGE>/
+
+MEDIA RULES (IMPORTANT)
+1) Default media is FULL-WIDTH:
+   - Use <figure class="media">.
+
+2) INLINE media:
+   - If the placeholder comment includes the token "INLINE",
+     embed the media as inline:
+       - wrap in a .media-row
+       - use <figure class="media inline">
+
+3) Alternation:
+   - If two or more INLINE media placeholders appear back-to-back
+     within the same section, wrap the generated .media-row blocks
+     in a single <div class="media-stack"> container.
+   - Do NOT wrap single inline items in media-stack.
+
+4) Do NOT guess:
+   - Match filenames by intent from the placeholder text.
+   - If a required file is missing, leave the placeholder comment
+     and add:
+       <!-- NOTE: Media file not found for this placeholder -->
+
+HTML STRUCTURE (MUST FOLLOW EXACTLY)
+
+FULL-WIDTH IMAGE:
+<figure class="media">
+  <div class="media-frame">
+    <img src="/_media/<SECTION>/<PAGE>/<file>.png" alt="Short descriptive alt text" />
+  </div>
+  <figcaption>One-sentence caption.</figcaption>
+</figure>
+
+INLINE IMAGE:
+<div class="media-row">
+  <div>
+    <!-- existing explanatory text -->
+  </div>
+  <figure class="media inline">
+    <div class="media-frame">
+      <img src="/_media/<SECTION>/<PAGE>/<file>.png" alt="Short descriptive alt text" />
+    </div>
+    <figcaption>One-sentence caption.</figcaption>
+  </figure>
+</div>
+
+VIDEO:
+<figure class="media">
+  <div class="media-frame">
+    <video controls preload="metadata">
+      <source src="/_media/<SECTION>/<PAGE>/<file>.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <figcaption>One-sentence caption.</figcaption>
+</figure>
+
+ALT TEXT + CAPTIONS
+- Alt text: concise, UI-focused, no quotes unless escaped.
+- Captions: one calm sentence describing what the reader is seeing.
+
+WORK STEPS
+A) Open the target index.html and locate all <!-- MEDIA ... --> placeholders.
+B) List files in public/_media/<SECTION>/<PAGE>/.
+C) Replace each placeholder with the correct media block.
+D) Apply INLINE + media-stack rules exactly as described.
+E) Sanity-check src paths start with "/_media/...".
+
+OUTPUT
+Provide a short summary:
+- Number of placeholders found
+- Number replaced
+- Any placeholders left due to missing files (with expected filenames)
+Do NOT propose additional edits or design changes.
+
+
+## How you will use this in practice:
+
+How you’ll use this in practice
+
+For each page:
+
+Capture media
+
+Drop files into public/_media/<section>/<page>/
+
+Update placeholders to include INLINE where appropriate
+
+Paste this prompt into Codex
+
+Review results
+
+Move on
+
+That’s your repeatable assembly line.
