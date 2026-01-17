@@ -244,3 +244,16 @@ figure.media figcaption {
 figure.media video {
   background: #0b0b0b;
 }
+
+/* Inline media: supports nearby text without dominating */
+figure.media.inline {
+  max-width: 520px;
+  margin: 12px 0 18px;
+}
+
+@media (min-width: 900px) {
+  figure.media.inline {
+    float: right;
+    margin: 6px 0 18px 20px;
+  }
+}
