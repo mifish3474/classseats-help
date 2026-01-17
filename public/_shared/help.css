@@ -265,4 +265,24 @@ figure.media.inline {
     grid-template-columns: 1fr 520px;
     gap: 20px;
   }
+
+  .media-row > :first-child {
+    grid-column: 1;
+  }
+
+  .media-row > figure {
+    grid-column: 2;
+  }
+
+  .media-row:nth-of-type(even) {
+    grid-template-columns: 520px 1fr;
+  }
+
+  .media-row:nth-of-type(even) > :first-child {
+    grid-column: 2;
+  }
+
+  .media-row:nth-of-type(even) > figure {
+    grid-column: 1;
+  }
 }
