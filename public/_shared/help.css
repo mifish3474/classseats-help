@@ -248,12 +248,21 @@ figure.media video {
 /* Inline media: supports nearby text without dominating */
 figure.media.inline {
   max-width: 520px;
+  margin: 0;
+}
+
+/* Inline media row: keeps a screenshot aligned with its specific subsection */
+.media-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  align-items: start;
   margin: 12px 0 18px;
 }
 
 @media (min-width: 900px) {
-  figure.media.inline {
-    float: right;
-    margin: 6px 0 18px 20px;
+  .media-row {
+    grid-template-columns: 1fr 520px;
+    gap: 20px;
   }
 }
