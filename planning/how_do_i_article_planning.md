@@ -1,5 +1,6 @@
 ## How Do I . . . 
 
+[ ] Connect Google Drive
 [x] Add Seat Numbers
 [ ] Identify preferential seating in my seating arrangement
 [ ] Select students for preferential seating
@@ -27,3 +28,6 @@
 [ ] Print attendance, behavior, and combined reports
 [ ] Take a quicknote on desktop or mobile
 [ ] Create and access a doc on desktop or mobile
+[ ] Disconnect Google Drive
+[ ] Load a new Google Drive file
+[ ] Convert a local file to Google Drive
