@@ -54,7 +54,7 @@ MEDIA RULES
   </figure>
 
 TIP BOX FORMAT
-Use the one-line format with a colon:
+Use the one-line format with a colon and keep the full sentence on the same line (no manual line breaks inside the sentence):
 <div class="tip">
   <strong>Tip:</strong> Sentence text continues here.
 </div>
