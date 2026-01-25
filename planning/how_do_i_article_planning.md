@@ -3,7 +3,7 @@
 [x] Connect Google Drive
 [x] Add Seat Numbers
 [x] Identify preferential seating in my seating arrangement
-[ ] Select students for preferential seating
+[x] Select students for preferential seating
 [ ] View my seating chart
 [ ] Edit my seating chart
 [ ] Print my seating chart
