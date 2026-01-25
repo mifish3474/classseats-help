@@ -1,6 +1,6 @@
 ## How Do I . . . 
 
-[ ] Connect Google Drive
+[x] Connect Google Drive
 [x] Add Seat Numbers
 [ ] Identify preferential seating in my seating arrangement
 [ ] Select students for preferential seating
