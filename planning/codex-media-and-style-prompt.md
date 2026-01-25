@@ -22,6 +22,7 @@ MEDIA RULES
 - Replace existing <!-- MEDIA ... --> placeholders only.
 - Match filenames by intent from the placeholder text. If missing, leave the placeholder and add:
   <!-- NOTE: Media file not found for this placeholder -->
+- Prefer inline placement: if media clearly matches a specific step, embed it inline with that step using the INLINE format, even if the placeholder does not say INLINE.
 - FULL-WIDTH (default):
   <figure class="media">
     <div class="media-frame">
