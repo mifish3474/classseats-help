@@ -2,8 +2,11 @@ You are Codex working in the ClassSeats help site repo.
 
 FILL IN THESE PATHS FIRST
 Primary article file: /home/mnlfish/classseats-help/public/<SECTION>/<PAGE>/index.html
+
 Section landing page: /home/mnlfish/classseats-help/public/<SECTION>/index.html
-Model page for styling: /home/mnlfish/classseats-help/public/<SECTION>/<MODEL_PAGE>/index.html
+
+Model page for styling: /home/mnlfish/classseats-help/public/getting-started/creating-seating-arrangements/index.html
+
 Media folder: /home/mnlfish/classseats-help/public/_media/<SECTION>/<PAGE>/
 
 GOAL
