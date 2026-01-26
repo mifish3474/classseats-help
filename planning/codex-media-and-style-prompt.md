@@ -7,7 +7,7 @@ Section landing page: /home/mnlfish/classseats-help/public/<SECTION>/index.html
 
 Model page for styling: /home/mnlfish/classseats-help/public/getting-started/creating-seating-arrangements/index.html
 
-Media folder: /home/mnlfish/classseats-help/public/_media/<SECTION>/<PAGE>/
+Media folder is noted in the comment at the top of each page.
 
 GOAL
 Given an article HTML page with placeholder media comments and available media files, update the page so it matches the site’s standard help page styling and structure, insert the media correctly, and fix any related links in the section landing page.
