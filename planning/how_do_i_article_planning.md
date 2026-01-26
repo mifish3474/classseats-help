@@ -5,8 +5,8 @@
 [x] Identify preferential seating in my seating arrangement
 [x] Select students for preferential seating
 [x] View my seating chart
-[ ] Edit my seating chart
-[ ] Print my seating chart
+[x] Edit my seating chart
+[x] Print my seating chart
 [ ] Print a roster
 [ ] Take attendance on desktop
 [ ] Access mobile
