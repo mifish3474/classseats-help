@@ -62,6 +62,7 @@ Use the one-line format with a colon and keep the full sentence on the same line
 <div class="tip">
   <strong>Tip:</strong> Sentence text continues here.
 </div>
+Note: The shared CSS keeps tip labels inline, so use <strong> for emphasis inside tips.
 
 LINKS
 - Ensure breadcrumbs and section landing links point to the correct /<SECTION>/... paths.

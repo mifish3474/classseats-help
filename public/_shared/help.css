@@ -135,8 +135,8 @@ li {
 }
 
 .tip strong {
-  display: block;
-  margin-bottom: 0.25rem;
+  display: inline;
+  margin: 0;
 }
 
 .warning {
