@@ -7,7 +7,7 @@
 [x] View my seating chart
 [x] Edit my seating chart
 [x] Print my seating chart
-[ ] Print a roster
+[x] Print a roster
 [ ] Take attendance on desktop
 [ ] Access mobile
 [ ] Add student photos
