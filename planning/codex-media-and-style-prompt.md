@@ -1,9 +1,9 @@
 You are Codex working in the ClassSeats help site repo.
 
 FILL IN THESE PATHS FIRST
-Primary article file: /home/mnlfish/classseats-help/public/<SECTION>/<PAGE>/index.html
+Primary article file: 
 
-Section landing page: /home/mnlfish/classseats-help/public/<SECTION>/index.html
+Section landing page: 
 
 Model page for styling: /home/mnlfish/classseats-help/public/getting-started/creating-seating-arrangements/index.html
 
