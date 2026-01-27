@@ -13,8 +13,8 @@
 [ ] Add student photos
 [ ] Use flashcards to learn student names
 [ ] Take attendance on mobile
-[ ] Collect student preferences
-[ ] Load student preferences
+[x] Collect student preferences
+[x] Load student preferences
 [ ] Use student preferences in groupings
 [ ] Ignore student preferences in groupings
 [ ] Apply constraints to groupings
