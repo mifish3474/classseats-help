@@ -14,10 +14,10 @@
 [ ] Use flashcards to learn student names
 [ ] Take attendance on mobile
 [x] Collect student preferences
-[x] Load student preferences
+[x] Load student preferences 
 [ ] Use student preferences in groupings
 [ ] Ignore student preferences in groupings
-[ ] Apply constraints to groupings
+[x] Apply constraints to groupings
 [ ] Modify constraints
 [ ] Reorganize students in a table
 [ ] Add a seat to a table
