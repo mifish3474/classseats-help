@@ -5,7 +5,9 @@ Primary article file:
 
 Section landing page: 
 
-Model page for styling: /home/mnlfish/classseats-help/public/getting-started/creating-seating-arrangements/index.html
+Model page for section landing page styling: /home/mnlfish/classseats-help/public/students-rosters/index.html
+
+Model page for article styling: /home/mnlfish/classseats-help/public/getting-started/creating-seating-arrangements/index.html
 
 Media folder is noted in the comment at the top of each page.
 
