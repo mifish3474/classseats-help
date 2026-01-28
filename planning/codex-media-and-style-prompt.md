@@ -17,7 +17,9 @@ Given an article HTML page with placeholder media comments and available media f
 SCOPE
 - Edit the primary article file above.
 - Also update the section landing page if its links need to point to the new/updated article.
-- Do NOT edit /home/mnlfish/classseats-help/public/index.html.
+- If new content makes a section no longer “Coming Soon,” update:
+  - The section landing page “Common questions” list (convert any Coming Soon placeholders to real links).
+  - The main help tiles in /home/mnlfish/classseats-help/public/index.html (activate tiles and remove Coming Soon marker when the section has at least one active Common questions link).
 
 STYLING
 - Use the model page (full path above) as the structural/style reference (doctype, head metadata, container/page wrappers, breadcrumbs, footer, tip/next styles).
@@ -70,13 +72,24 @@ LINKS
 - Ensure breadcrumbs and section landing links point to the correct /<SECTION>/... paths.
 - Verify the article page path matches its folder name.
 
+COMING SOON CLEANUP
+- If the new/updated article replaces a Coming Soon entry in the section landing page, remove the Coming Soon placeholder and restore it as a real <a> link.
+- If a section now has at least one active Common questions link, ensure its main tile on /public/index.html is active (not disabled) and shows “View articles →”.
+- If a section still has no active Common questions links, keep its tile disabled with the “🛠️ Coming Soon” marker.
+
+SEARCH INDEX
+- After creating or updating article pages, rebuild the Pagefind index so search includes the new content.
+- Run: `npm install` (first time only), then `npm run build` to generate /public/pagefind.
+
 WORK STEPS
 A) Open the primary article file and find all <!-- MEDIA ... --> placeholders.
 B) List files in the media folder.
 C) Apply the standard page shell (using the model page) without rewriting copy.
 D) Replace placeholders with media blocks per rules above.
 E) Update the section landing page links if needed.
-F) Sanity-check all src paths start with /_media/....
+F) Apply Coming Soon cleanup rules (section landing + main tiles).
+G) Rebuild Pagefind index after edits.
+H) Sanity-check all src paths start with /_media/....
 
 OUTPUT
 - Summary of changes (style shell applied, media inserted, links fixed).
