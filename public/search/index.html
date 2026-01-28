@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search – ClassSeats Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Search the ClassSeats Help articles by keyword." />
+  <link rel="stylesheet" href="/_shared/help.css">
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page" data-pagefind-body>
+
+      <div class="breadcrumbs" data-pagefind-ignore>
+        <a href="/">Help</a> → Search
+      </div>
+
+      <h1>Search</h1>
+
+      <p class="summary">
+        Find the right help article fast. Try a few keywords, then refine your search.
+      </p>
+
+      <div class="section" data-pagefind-ignore>
+        <div id="search"></div>
+      </div>
+
+      <footer data-pagefind-ignore>
+        <p><a href="/">← Back to Help</a></p>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const ui = new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+          placeholder: "Search ClassSeats Help",
+          zero_results: "No results for \"[SEARCH_TERM]\""
+        }
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get("q");
+      if (q) {
+        ui.triggerSearch(q);
+      }
+    });
+  </script>
+</body>
+</html>

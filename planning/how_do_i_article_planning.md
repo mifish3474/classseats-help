@@ -18,10 +18,10 @@
 [ ] Use student preferences in groupings
 [ ] Ignore student preferences in groupings
 [x] Apply constraints to groupings
-[ ] Modify constraints
+[x] Modify constraints
 [ ] Reorganize students in a table
-[ ] Add a seat to a table
-[ ] Remove a seat from a table
+[x] Add a seat to a table
+[x] Remove a seat from a table
 [ ] Customize seats in an arrangement
 [ ] Apply behavior points to a class
 [ ] Adjust points for a student, table, or class

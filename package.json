@@ -1,0 +1,11 @@
+{
+  "name": "classseats-help",
+  "private": true,
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  },
+  "scripts": {
+    "build": "pagefind",
+    "build:search": "pagefind"
+  }
+}

@@ -217,7 +217,7 @@
 <body>
   <div class="container">
 
-    <div class="topbar">
+    <div class="topbar" data-pagefind-ignore>
   <div class="brand-wrap">
     <a href="https://app.classseats.app" target="_blank" rel="noopener" class="logo-link">
       <img src="/assets/icon-192.png" alt="ClassSeats" class="logo" />
@@ -231,22 +231,25 @@
 </div>
 
 
-    <h1>Help &amp; How-To</h1>
-    <p class="subtitle">
-      Short answers, quick demos, and reassurance when things feel confusing.
-    </p>
+    <main data-pagefind-body>
+      <h1>Help &amp; How-To</h1>
+      <p class="subtitle">
+        Short answers, quick demos, and reassurance when things feel confusing.
+      </p>
 
-    <div class="start-here">
-      <strong>New to ClassSeats?</strong>
-      <span>Start with <a href="/getting-started/">Getting Started</a> and <a href="/google-drive-sync/">Google Drive &amp; Sync</a>.</span>
-    </div>
+      <div class="start-here">
+        <strong>New to ClassSeats?</strong>
+        <span>Start with <a href="/getting-started/">Getting Started</a> and <a href="/google-drive-sync/">Google Drive &amp; Sync</a>.</span>
+      </div>
 
-    <div class="search">
-      <input id="searchBox" type="text" placeholder="Search for help (attendance, seating, Drive, printing…)" />
-      <p class="hint" id="hintText">Tip: type a keyword (like “Drive” or “attendance”) to filter sections.</p>
-    </div>
+      <div class="search">
+        <form action="/search/" method="get">
+          <input id="searchBox" name="q" type="search" aria-label="Search help articles" placeholder="Search for help (attendance, seating, Drive, printing…)" />
+        </form>
+        <p class="hint">Search all help articles by keyword (for example: “Drive” or “attendance”).</p>
+      </div>
 
-    <div class="grid" id="cards">
+      <div class="grid" id="cards">
 
       <a class="card" href="/getting-started/" data-keywords="start getting started new setup basics">
         <h2>Getting Started</h2>
@@ -319,13 +322,10 @@
   <div class="cta">View articles →</div>
 </a>
 
-    </div>
+      </div>
+    </main>
 
-    <div class="empty" id="emptyState">
-      No matches. Try a different keyword (for example: “Drive”, “attendance”, or “printing”).
-    </div>
-
-    <footer>
+    <footer data-pagefind-ignore>
       <div>
         Still stuck? If something doesn’t look right, you can
         <!-- Replace this later with a real form link -->
@@ -338,33 +338,5 @@
 
   </div>
 
-  <script>
-    (function () {
-      const input = document.getElementById('searchBox');
-      const cards = Array.from(document.querySelectorAll('#cards .card'));
-      const empty = document.getElementById('emptyState');
-
-      function norm(s) {
-        return (s || '').toLowerCase().trim();
-      }
-
-      function filter() {
-        const q = norm(input.value);
-        let shown = 0;
-
-        for (const card of cards) {
-          const hay = norm(card.textContent) + ' ' + norm(card.getAttribute('data-keywords'));
-          const match = q === '' || hay.includes(q);
-          card.style.display = match ? '' : 'none';
-          if (match) shown++;
-        }
-
-        empty.style.display = shown === 0 ? 'block' : 'none';
-      }
-
-      input.addEventListener('input', filter);
-      filter();
-    })();
-  </script>
 </body>
 </html>
