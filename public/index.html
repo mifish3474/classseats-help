@@ -207,7 +207,24 @@
     }
     footer a:hover { color: var(--linkHover); }
 
-    @media (max-width: 600px) {
+    
+    .card.disabled {
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    .card.disabled:hover {
+      transform: none;
+      box-shadow: var(--shadow);
+      border-color: var(--border);
+    }
+
+    .card .cta.coming-soon {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+@media (max-width: 600px) {
       body { padding: 1.25rem; }
       .start-here { flex-direction: column; align-items: flex-start; }
     }
@@ -254,8 +271,9 @@
       <a class="card" href="/getting-started/" data-keywords="start getting started new setup basics">
         <h2>Getting Started</h2>
         <p>Learn how ClassSeats works and how to begin at your own pace.</p>
-        <div class="cta">View articles →</div>
-      </a>
+        <div class="cta coming-soon">🛠️ Coming Soon
+        <div class="cta">View articles →</div></a>
+      </div>
 
       <a class="card" href="/google-drive-sync/" data-keywords="drive sync backup mobile offline file">
         <h2>Google Drive &amp; Sync</h2>
@@ -281,23 +299,23 @@
         <div class="cta">View articles →</div>
       </a>
 
-      <a class="card" href="/attendance-daily-notes/" data-keywords="attendance daily notes present absent tardy">
+      <div class="card disabled" data-section="/attendance-daily-notes/" data-keywords="attendance daily notes present absent tardy">
         <h2>Attendance &amp; Daily Notes</h2>
         <p>Take attendance and record quick notes during class.</p>
-        <div class="cta">View articles →</div>
-      </a>
+        <div class="cta coming-soon">🛠️ Coming Soon</div>
+      </div>
 
-      <a class="card" href="/student-notes/" data-keywords="student notes history records documentation">
+      <div class="card disabled" data-section="/student-notes/">
         <h2>Student Notes</h2>
         <p>Review and manage notes across days and students.</p>
-        <div class="cta">View articles →</div>
-      </a>
+        <div class="cta coming-soon">🛠️ Coming Soon</div></div>
+      </div>
 
-      <a class="card" href="/behavior-points/" data-keywords="behavior points rewards consequences tracking">
+      <div class="card disabled" data-section="/behavior-points/">
         <h2>Behavior Points</h2>
         <p>Enable and manage optional behavior point systems.</p>
-        <div class="cta">View articles →</div>
-      </a>
+        <div class="cta coming-soon">🛠️ Coming Soon</div></div>
+      </div>
 
       <a class="card" href="/printing-reports/" data-keywords="printing reports export pdf paper">
         <h2>Printing &amp; Reports</h2>
@@ -305,22 +323,22 @@
         <div class="cta">View articles →</div>
       </a>
 
-      <a class="card" href="/mobile/" data-keywords="mobile phone pwa ios android chromebook">
+      <div class="card disabled" data-section="/mobile/">
         <h2>ClassSeats Mobile</h2>
         <p>Use ClassSeats on your phone or Chromebook.</p>
-        <div class="cta">View articles →</div>
-      </a>
+        <div class="cta coming-soon">🛠️ Coming Soon</div></div>
+      </div>
 
-      <a class="card" href="/privacy-data/" data-keywords="privacy data ferpa safety storage">
+      <div class="card disabled" data-section="/privacy-data/">
         <h2>Privacy &amp; Data Safety</h2>
         <p>Learn where your data lives and how it’s protected.</p>
-        <div class="cta">View articles →</div>
-      </a>
-    <a class="card" href="/accounts-plans/" data-keywords="account plans subscription pricing license trial">
+        <div class="cta coming-soon">🛠️ Coming Soon</div></div>
+      </div>
+    <div class="card disabled" data-section="/accounts-plans/">
   <h2>Accounts & Plans</h2>
   <p>Learn how accounts work, what’s included today, and how future plans may look.</p>
-  <div class="cta">View articles →</div>
-</a>
+  <div class="cta coming-soon">🛠️ Coming Soon</div></div>
+</div>
 
       </div>
     </main>
