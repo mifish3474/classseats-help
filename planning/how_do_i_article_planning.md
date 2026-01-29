@@ -9,7 +9,7 @@
 [x] Print my seating chart
 [x] Print a roster
 [ ] Take attendance on desktop
-[ ] Access mobile
+[x] Access mobile
 [ ] Add student photos
 [ ] Use flashcards to learn student names
 [ ] Take attendance on mobile
