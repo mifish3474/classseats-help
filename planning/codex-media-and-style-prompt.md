@@ -22,14 +22,19 @@ SCOPE
   - The main help tiles in /home/mnlfish/classseats-help/public/index.html (activate tiles and remove Coming Soon marker when the section has at least one active Common questions link).
 
 STYLING
-- Use the model page (full path above) as the structural/style reference (doctype, head metadata, container/page wrappers, breadcrumbs, footer, tip/next styles).
+- Use the model page (full path above) as the structural/style reference (doctype, head metadata, container/page wrappers, header/breadcrumbs, footer, tip/next styles).
 - Preserve all existing copy and headings; only rewrap to match the model when needed.
-- Ensure the help search bar appears directly under the breadcrumbs on all article and section pages (not on /public/index.html).
-  Use this exact snippet directly after the breadcrumbs block:
-  <div class="help-search" data-pagefind-ignore>
-    <form action="/search/" method="get">
-      <input type="search" name="q" aria-label="Search help articles" placeholder="Search the help center" />
-    </form>
+- Ensure the help search bar appears on the same line as the breadcrumbs (right-aligned) on all article and section pages (not on /public/index.html).
+  Use this exact wrapper snippet in place of the breadcrumbs block:
+  <div class="page-header">
+    <div class="breadcrumbs" data-pagefind-ignore>
+      <a href="/">Help</a> → <a href="/SECTION/">Section</a>
+    </div>
+    <div class="help-search" data-pagefind-ignore>
+      <form action="/search/" method="get">
+        <input type="search" name="q" aria-label="Search help articles" placeholder="Search the help center" />
+      </form>
+    </div>
   </div>
 
 MEDIA RULES
@@ -96,7 +101,7 @@ D) Replace placeholders with media blocks per rules above.
 E) Update the section landing page links if needed.
 F) Apply Coming Soon cleanup rules (section landing + main tiles).
 G) Rebuild Pagefind index after edits.
-H) Verify the help search bar sits directly under breadcrumbs on edited pages.
+H) Verify the help search bar sits on the same line as the breadcrumbs (right-aligned) on edited pages.
 I) Sanity-check all src paths start with /_media/....
 
 OUTPUT
