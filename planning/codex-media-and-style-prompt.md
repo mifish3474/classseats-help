@@ -24,6 +24,13 @@ SCOPE
 STYLING
 - Use the model page (full path above) as the structural/style reference (doctype, head metadata, container/page wrappers, breadcrumbs, footer, tip/next styles).
 - Preserve all existing copy and headings; only rewrap to match the model when needed.
+- Ensure the help search bar appears directly under the breadcrumbs on all article and section pages (not on /public/index.html).
+  Use this exact snippet directly after the breadcrumbs block:
+  <div class="help-search" data-pagefind-ignore>
+    <form action="/search/" method="get">
+      <input type="search" name="q" aria-label="Search help articles" placeholder="Search the help center" />
+    </form>
+  </div>
 
 MEDIA RULES
 - Replace existing <!-- MEDIA ... --> placeholders only.
@@ -89,7 +96,8 @@ D) Replace placeholders with media blocks per rules above.
 E) Update the section landing page links if needed.
 F) Apply Coming Soon cleanup rules (section landing + main tiles).
 G) Rebuild Pagefind index after edits.
-H) Sanity-check all src paths start with /_media/....
+H) Verify the help search bar sits directly under breadcrumbs on edited pages.
+I) Sanity-check all src paths start with /_media/....
 
 OUTPUT
 - Summary of changes (style shell applied, media inserted, links fixed).
