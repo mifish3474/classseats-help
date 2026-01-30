@@ -11,7 +11,7 @@
 [ ] Take attendance on desktop
 [x] Access mobile
 [x] Add student photos
-[ ] Use flashcards to learn student names
+[x] Use flashcards to learn student names
 [ ] Take attendance on mobile
 [x] Collect student preferences
 [x] Load student preferences 
