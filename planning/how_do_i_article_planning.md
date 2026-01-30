@@ -10,7 +10,7 @@
 [x] Print a roster
 [ ] Take attendance on desktop
 [x] Access mobile
-[ ] Add student photos
+[x] Add student photos
 [ ] Use flashcards to learn student names
 [ ] Take attendance on mobile
 [x] Collect student preferences

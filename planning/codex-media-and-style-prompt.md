@@ -38,7 +38,8 @@ STYLING
   </div>
 
 MEDIA RULES
-- Replace existing <!-- MEDIA ... --> placeholders only.
+- If the article has <!-- MEDIA ... --> placeholders, replace them.
+- If the article has no placeholders but matching media exists, insert media where it makes the most instructional sense (usually inline with the relevant step).
 - Match filenames by intent from the placeholder text. If missing, leave the placeholder and add:
   <!-- NOTE: Media file not found for this placeholder -->
 - Prefer inline placement: if media clearly matches a specific step, embed it inline with that step using the INLINE format, even if the placeholder does not say INLINE.
@@ -93,7 +94,7 @@ WORK STEPS
 A) Open the primary article file and find all <!-- MEDIA ... --> placeholders.
 B) List files in the media folder.
 C) Apply the standard page shell (using the model page) without rewriting copy.
-D) Replace placeholders with media blocks per rules above.
+D) Replace placeholders with media blocks per rules above (or insert media where it makes the most instructional sense if no placeholders exist).
 E) Update the section landing page links if needed.
 F) Apply Coming Soon cleanup rules (section landing + main tiles).
 H) Verify the help search bar sits on the same line as the breadcrumbs (right-aligned) on edited pages.
@@ -101,5 +102,6 @@ I) Sanity-check all src paths start with /_media/....
 
 OUTPUT
 - Summary of changes (style shell applied, media inserted, links fixed).
-- Number of placeholders found and replaced.
+- Number of placeholders found and replaced (if any).
+- Number of media items inserted without placeholders (if any).
 - Any placeholders left due to missing files (with expected filenames).
