@@ -3,7 +3,7 @@ You are Codex working in the ClassSeats help site repo.
 FILL IN THESE PATHS FIRST
 Primary article file: 
 
-Section landing page: 
+Section landing page is noted in the comment at the top of each page.  
 
 Model page for section landing page styling: /home/mnlfish/classseats-help/public/students-rosters/index.html
 
@@ -89,10 +89,6 @@ COMING SOON CLEANUP
 - If a section now has at least one active Common questions link, ensure its main tile on /public/index.html is active (not disabled) and shows “View articles →”.
 - If a section still has no active Common questions links, keep its tile disabled with the “🛠️ Coming Soon” marker.
 
-SEARCH INDEX
-- After creating or updating article pages, rebuild the Pagefind index so search includes the new content.
-- Run: `npm install` (first time only), then `npm run build` to generate /public/pagefind.
-
 WORK STEPS
 A) Open the primary article file and find all <!-- MEDIA ... --> placeholders.
 B) List files in the media folder.
@@ -100,7 +96,6 @@ C) Apply the standard page shell (using the model page) without rewriting copy.
 D) Replace placeholders with media blocks per rules above.
 E) Update the section landing page links if needed.
 F) Apply Coming Soon cleanup rules (section landing + main tiles).
-G) Rebuild Pagefind index after edits.
 H) Verify the help search bar sits on the same line as the breadcrumbs (right-aligned) on edited pages.
 I) Sanity-check all src paths start with /_media/....
 
