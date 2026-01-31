@@ -1,184 +1,285 @@
+<!--
+PATH: /home/mnlfish/classseats-help/public/mobile/how-do-i-take-attendance-on-mobile/index.html
+SECTION: /home/mnlfish/classseats-help/public/mobile/index.html
+MEDIA PATH: /home/mnlfish/classseats-help/public/_media/mobile
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>How do I take attendance on mobile?</title>
-  <link rel="stylesheet" href="/_shared/help.css" />
+  <title>How do I take attendance on mobile? – ClassSeats Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Take attendance in ClassSeats Mobile using table or list view, then finish quickly with Mark Rest." />
+
+  <link rel="stylesheet" href="/_shared/help.css">
 </head>
 
 <body>
-  <!--
-  MEDIA TO CAPTURE (for this article)
-  1) Mobile Attendance control bar (date controls + Today + class selector + View dropdown + Mark Rest)
-  2) Mobile View dropdown open (showing Table View and List View options)
-  3) Table View example (a few tables visible on the attendance page)
-  4) List View example (student list visible on the attendance page)
-  5) Student card with the three-dot (⋮) menu button visible (mobile)
-  6) Student three-dot (⋮) menu OPEN (Present/Absent/Tardy/Left Early/Unmarked)
-  7) Top control bar “Mark Rest” button (mobile)
-  8) Table-level “Mark Rest” button (mobile)
-  9) Cards showing status backgrounds and labels (include at least one Present, one Absent, one Tardy with T1, and one Left Early with LE1)
-  10) Progress line / daily stats counters (Progress + Present/Absent/Tardy/Left Early) and Student menu section showing “Counters (since reset)” and the reset options
-  -->
-
-  <nav class="breadcrumbs">
-    <a href="/">Help</a> ›
-    <a href="/mobile/">Mobile</a> ›
-    Attendance
-  </nav>
-
   <div class="container">
-    <div class="page">
+    <div class="page" data-pagefind-body>
+      <div class="page-header">
+        <div class="breadcrumbs" data-pagefind-ignore>
+          <a href="/">Help</a> → <a href="/mobile/">Mobile</a>
+        </div>
+        <div class="help-search" data-pagefind-ignore>
+          <form action="/search/" method="get">
+            <input type="search" name="q" aria-label="Search help articles" placeholder="Search the help center" />
+          </form>
+        </div>
+      </div>
 
       <h1>How do I take attendance on mobile?</h1>
 
-      <p>
+      <p class="summary">
         ClassSeats Mobile lets you take attendance quickly using either your seating chart (Table View)
         or a student list. You can mark students one-by-one, then use <strong>Mark Rest</strong> to finish fast.
       </p>
 
-      <!-- Screenshot: Mobile Attendance control bar (date + Today + class selector + View dropdown + Mark Rest) -->
+      <figure class="media">
+        <div class="media-frame">
+          <img src="/_media/mobile/mobile-attendance-control-bar.png" alt="Mobile attendance control bar with date controls, Today, class selector, view dropdown, and Mark Rest" />
+        </div>
+        <figcaption>The attendance control bar includes date controls, view options, and Mark Rest.</figcaption>
+      </figure>
 
-      <h2>Open Attendance</h2>
-      <ol>
-        <li>Open <strong>ClassSeats Mobile</strong>.</li>
-        <li>Make sure your class file is loaded.</li>
-        <li>Tap <strong>Attendance</strong>.</li>
-        <li>Select the correct class/period if needed.</li>
-        <li>
-          Check the date:
-          <ul>
-            <li>Tap <strong>Today</strong> to jump to today quickly.</li>
-            <li>Use the arrows or calendar controls to move to a different day.</li>
-          </ul>
-        </li>
-      </ol>
+      <div class="section">
+        <h2>Open Attendance</h2>
+        <ol>
+          <li>Open <strong>ClassSeats Mobile</strong>.</li>
+          <li>Make sure your class file is loaded.</li>
+          <li>Tap <strong>Attendance</strong>.</li>
+          <li>Select the correct class/period if needed.</li>
+          <li>
+            Check the date:
+            <ul>
+              <li>Tap <strong>Today</strong> to jump to today quickly.</li>
+              <li>Use the arrows or calendar controls to move to a different day.</li>
+            </ul>
+          </li>
+        </ol>
 
-      <!-- Screenshot: Mobile date controls + Today button -->
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-attendance-control-bar.png" alt="Date controls and Today button in the mobile attendance header" />
+          </div>
+          <figcaption>Use the arrows or the Today button to jump to the date you need.</figcaption>
+        </figure>
+      </div>
 
-      <h2>Choose your view</h2>
-      <p>
-        Use the <strong>View</strong> dropdown to pick what works best right now:
-      </p>
-      <ul>
-        <li><strong>Table View</strong> (seating chart style)</li>
-        <li><strong>List View</strong> (student list style)</li>
-      </ul>
+      <div class="section">
+        <h2>Choose your view</h2>
+        <p>
+          Use the <strong>View</strong> dropdown to pick what works best right now:
+        </p>
+        <ul>
+          <li><strong>Table View</strong> (seating chart style)</li>
+          <li><strong>List View</strong> (student list style)</li>
+        </ul>
 
-      <!-- Screenshot: Mobile View dropdown open (showing Table View and List View options) -->
-      <!-- Screenshot: Table View example (tables visible on attendance page) -->
-      <!-- Screenshot: List View example (student list visible on attendance page) -->
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-view-dropdown-open.jpg" alt="View dropdown open with Table View and List View options" />
+          </div>
+          <figcaption>Switch between Table View and List View using the View dropdown.</figcaption>
+        </figure>
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-table-view.jpg" alt="Mobile attendance page showing table view" />
+          </div>
+          <figcaption>Table View shows attendance on your seating chart layout.</figcaption>
+        </figure>
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-list-view.jpg" alt="Mobile attendance page showing list view" />
+          </div>
+          <figcaption>List View shows a scrollable list of students.</figcaption>
+        </figure>
+      </div>
 
-      <h2>Mark a student</h2>
-      <p>
-        Each student card has a <strong>three-dot (⋮) menu</strong> for attendance.
-      </p>
-      <ol>
-        <li>Find the student.</li>
-        <li>Tap the <strong>⋮</strong> menu on their card.</li>
-        <li>
-          Choose one:
-          <ul>
-            <li><strong>Present</strong></li>
-            <li><strong>Absent</strong></li>
-            <li><strong>Tardy</strong></li>
-            <li><strong>Left Early</strong></li>
-            <li><strong>Unmarked</strong></li>
-          </ul>
-        </li>
-      </ol>
+      <div class="section">
+        <h2>Mark a student</h2>
+        <p>
+          Each student card has a <strong>three-dot (⋮) menu</strong> for attendance.
+        </p>
+        <ol>
+          <li>Find the student.</li>
+          <li>
+            <div class="media-row">
+              <div>
+                Tap the <strong>⋮</strong> menu on their card.
+              </div>
+              <figure class="media inline">
+                <div class="media-frame">
+                  <img src="/_media/mobile/mobile-student-card-3dot-menu-visible.jpg" alt="Student card with the three-dot menu visible" />
+                </div>
+                <figcaption>Use the three-dot menu to open attendance options.</figcaption>
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="media-row">
+              <div>
+                Choose one:
+                <ul>
+                  <li><strong>Present</strong></li>
+                  <li><strong>Absent</strong></li>
+                  <li><strong>Tardy</strong></li>
+                  <li><strong>Left Early</strong></li>
+                  <li><strong>Unmarked</strong></li>
+                </ul>
+              </div>
+              <figure class="media inline">
+                <div class="media-frame">
+                  <img src="/_media/mobile/mobile-student-card-3dot-menu-open.jpg" alt="Open student menu with attendance status options" />
+                </div>
+                <figcaption>The menu shows all attendance status choices.</figcaption>
+              </figure>
+            </div>
+          </li>
+        </ol>
 
-      <!-- Screenshot: Mobile student card with the ⋮ menu visible -->
-      <!-- Screenshot: Mobile student ⋮ menu open (Present/Absent/Tardy/Left Early/Unmarked) -->
+        <p>
+          When you mark a student, their card background updates so you can see their status at a glance.
+        </p>
 
-      <p>
-        When you mark a student, their card background updates so you can see their status at a glance.
-      </p>
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-with-backgrounds-and-attendance-labels.jpg" alt="Student cards showing present, absent, tardy, and left early status backgrounds" />
+          </div>
+          <figcaption>Card colors and labels make it easy to scan attendance status.</figcaption>
+        </figure>
+      </div>
 
-      <!-- Screenshot: Mobile cards showing different status backgrounds -->
+      <div class="section">
+        <h2>Finish faster with Mark Rest</h2>
+        <p>
+          Once you’ve marked the exceptions (absent/tardy/left early), you can mark everyone else quickly.
+        </p>
+      </div>
 
-      <h2>Finish faster with Mark Rest</h2>
-      <p>
-        Once you’ve marked the exceptions (absent/tardy/left early), you can mark everyone else quickly.
-      </p>
+      <div class="section">
+        <h2>Mark the rest of the class</h2>
+        <ul>
+          <li>
+            <div class="media-row">
+              <div>
+                Tap <strong>Mark Rest</strong> in the top control bar to mark everyone still unmarked as <strong>Present</strong>.
+              </div>
+              <figure class="media inline">
+                <div class="media-frame">
+                  <img src="/_media/mobile/mobile-global-mark-rest-present.jpg" alt="Mark Rest button in the mobile attendance control bar" />
+                </div>
+                <figcaption>Mark Rest fills in all remaining unmarked students.</figcaption>
+              </figure>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-      <h2>Mark the rest of the class</h2>
-      <ul>
-        <li>
-          Tap <strong>Mark Rest</strong> in the top control bar to mark everyone still unmarked as <strong>Present</strong>.
-        </li>
-      </ul>
+      <div class="section">
+        <h2>Mark the rest of a table</h2>
+        <p>
+          In <strong>Table View</strong>, each table has its own <strong>Mark Rest</strong> button to mark any unmarked students at that table as <strong>Present</strong>.
+        </p>
 
-      <!-- Screenshot: Mobile Mark Rest button in the top control bar -->
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-table-mark-rest-present-button.jpg" alt="Table-level Mark Rest button on a table in mobile attendance" />
+          </div>
+          <figcaption>Use the table-level Mark Rest button for just one table.</figcaption>
+        </figure>
+      </div>
 
-      <h2>Mark the rest of a table</h2>
-      <p>
-        In <strong>Table View</strong>, each table has its own <strong>Mark Rest</strong> button to mark any unmarked students at that table as <strong>Present</strong>.
-      </p>
+      <div class="section">
+        <h2>Understand labels and counters</h2>
+        <p>
+          Some attendance statuses show a small label on the student card, such as <strong>T1</strong>, <strong>LE1</strong>, or <strong>A2</strong>.
+          These help you spot patterns quickly.
+        </p>
 
-      <!-- Screenshot: Mobile table-level Mark Rest button -->
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-with-backgrounds-and-attendance-labels.jpg" alt="Student cards with labels like T1, LE1, and A2" />
+          </div>
+          <figcaption>Labels like T1 and LE1 show attendance history at a glance.</figcaption>
+        </figure>
+      </div>
 
-      <h2>Understand labels and counters</h2>
-      <p>
-        Some attendance statuses show a small label on the student card, such as <strong>T1</strong>, <strong>LE1</strong>, or <strong>A2</strong>.
-        These help you spot patterns quickly.
-      </p>
+      <div class="section">
+        <h2>What the labels mean</h2>
+        <ul>
+          <li><strong>T1</strong> = Tardy <strong>1</strong> time since the last reset</li>
+          <li><strong>LE1</strong> = Left Early <strong>1</strong> time since the last reset</li>
+          <li><strong>A2</strong> = <strong>2 consecutive absences</strong></li>
+        </ul>
+      </div>
 
-      <!-- Screenshot: Mobile close-up showing labels clearly (T1, LE1, and A2 visible on student cards) -->
+      <div class="section">
+        <h2>How they are tracked</h2>
+        <ul>
+          <li>
+            <strong>Tardy (T#)</strong> and <strong>Left Early (LE#)</strong>
+            <ul>
+              <li>Count how many times that status has occurred</li>
+              <li>The count increases each time the student is marked that way</li>
+              <li>The count does <strong>not</strong> reset automatically</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Absent (A#)</strong>
+            <ul>
+              <li>Tracks <strong>consecutive absences</strong></li>
+              <li>The count increases only when absences happen back-to-back</li>
+              <li>Marking a student <strong>Present</strong> breaks the streak</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-      <h2>What the labels mean</h2>
-      <ul>
-        <li><strong>T1</strong> = Tardy <strong>1</strong> time since the last reset</li>
-        <li><strong>LE1</strong> = Left Early <strong>1</strong> time since the last reset</li>
-        <li><strong>A2</strong> = <strong>2 consecutive absences</strong></li>
-      </ul>
+      <div class="section">
+        <h2>Track your progress for the day</h2>
+        <p>
+          The control bar includes a progress/stat line so you can see where you’re at:
+        </p>
+        <ul>
+          <li><strong>Progress</strong> (how many students are marked)</li>
+          <li>Counts for <strong>Present</strong>, <strong>Absent</strong>, <strong>Tardy</strong>, and <strong>Left Early</strong></li>
+        </ul>
 
-      <h2>How they are tracked</h2>
-      <ul>
-        <li>
-          <strong>Tardy (T#)</strong> and <strong>Left Early (LE#)</strong>
-          <ul>
-            <li>Count how many times that status has occurred</li>
-            <li>The count increases each time the student is marked that way</li>
-            <li>The count does <strong>not</strong> reset automatically</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Absent (A#)</strong>
-          <ul>
-            <li>Tracks <strong>consecutive absences</strong></li>
-            <li>The count increases only when absences happen back-to-back</li>
-            <li>Marking a student <strong>Present</strong> breaks the streak</li>
-          </ul>
-        </li>
-      </ul>
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-progress-line-and-daily-stat-counter.jpg" alt="Progress line with present, absent, tardy, and left early counters" />
+          </div>
+          <figcaption>The progress line shows how many students are marked and by status.</figcaption>
+        </figure>
+      </div>
 
-      <h2>Track your progress for the day</h2>
-      <p>
-        The control bar includes a progress/stat line so you can see where you’re at:
-      </p>
-      <ul>
-        <li><strong>Progress</strong> (how many students are marked)</li>
-        <li>Counts for <strong>Present</strong>, <strong>Absent</strong>, <strong>Tardy</strong>, and <strong>Left Early</strong></li>
-      </ul>
+      <div class="section">
+        <h2>Reset streaks and counters</h2>
+        <p>
+          If you want to reset tracking for a student, use their <strong>⋮</strong> menu.
+        </p>
+        <ul>
+          <li><strong>Reset absence streak</strong> (for consecutive absences)</li>
+          <li><strong>Reset tardy counter</strong></li>
+          <li><strong>Reset left early counter</strong></li>
+        </ul>
 
-      <!-- Screenshot: Mobile progress line + Present/Absent/Tardy/Left Early counters -->
-
-      <h2>Reset streaks and counters</h2>
-      <p>
-        If you want to reset tracking for a student, use their <strong>⋮</strong> menu.
-      </p>
-      <ul>
-        <li><strong>Reset absence streak</strong> (for consecutive absences)</li>
-        <li><strong>Reset tardy counter</strong></li>
-        <li><strong>Reset left early counter</strong></li>
-      </ul>
-
-      <!-- Screenshot: Mobile student menu showing “Counters (since reset)” and the reset options -->
+        <figure class="media">
+          <div class="media-frame">
+            <img src="/_media/mobile/mobile-counters-and-reset-options.jpg" alt="Student menu showing counters since reset and reset options" />
+          </div>
+          <figcaption>Use the Counters (since reset) section to clear student streaks.</figcaption>
+        </figure>
+      </div>
 
       <div class="tip">
         <strong>Tip:</strong> Mark absences/tardies first, then tap <strong>Mark Rest</strong> to finish in one go.
       </div>
+
+      <footer data-pagefind-ignore>
+        <p><a href="/">← Back to Help</a></p>
+      </footer>
 
     </div>
   </div>
