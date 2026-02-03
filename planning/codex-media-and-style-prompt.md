@@ -24,6 +24,9 @@ SCOPE
 STYLING
 - Use the model page (full path above) as the structural/style reference (doctype, head metadata, container/page wrappers, header/breadcrumbs, footer, tip/next styles).
 - Preserve all existing copy and headings; only rewrap to match the model when needed.
+- Ensure the footer includes these two lines at the very bottom on every page:
+  - ClassSeats™ is a product of ClassWare Solutions, LLC.
+  - © 2026 ClassWare Solutions, LLC. All rights reserved.
 - Ensure the help search bar appears on the same line as the breadcrumbs (right-aligned) on all article and section pages (not on /public/index.html).
   Use this exact wrapper snippet in place of the breadcrumbs block:
   <div class="page-header">
