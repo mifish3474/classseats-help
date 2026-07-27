@@ -52,14 +52,22 @@ This is the working checklist for updating the ClassSeats help site so screensho
 
 ### Getting Started
 
-Status: Not started
+Status: Reordering around current onboarding flow
+
+Current onboarding order:
+1. Signing in.
+2. Seating arrangements.
+3. Classes.
+4. Students.
+5. Groups.
 
 Pages:
 - `public/getting-started/index.html`
 - `public/getting-started/what-is-classseats/index.html`
+- `public/getting-started/signing-in/index.html`
+- `public/getting-started/creating-seating-arrangements/index.html`
 - `public/getting-started/first-class/index.html`
 - `public/getting-started/adding-students/index.html`
-- `public/getting-started/creating-seating-arrangements/index.html`
 - `public/getting-started/grouping-students/index.html`
 
 Media folders:
@@ -69,11 +77,15 @@ Media folders:
 - shared seating-arrangement media used by getting-started articles.
 
 Current concerns:
+- The old section order implied creating a class before seating arrangements.
+- The current app recommends creating a seating arrangement before adding classes, students, and groups.
+- Signing-in content has been split into its own page.
 - First-run/class creation screenshots and videos are likely old UI.
 - Adding students/import flow may have changed.
 - Grouping and seating arrangement setup likely needs current UI recapture.
 
 Planned updates:
+- Reorder Getting Started links and next-step links to match current onboarding.
 - Review every getting-started article against current onboarding.
 - Replace first-run, class creation, student import, seating setup, and grouping media.
 - Update instructions, alt text, and captions after media replacement.
@@ -300,4 +312,3 @@ Planned updates:
 - Run `npm run build` to regenerate Pagefind search.
 - Preview key article pages locally.
 - Run `git diff --check`.
-
