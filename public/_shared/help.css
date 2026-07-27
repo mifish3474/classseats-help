@@ -12,6 +12,9 @@
   --link-hover: #4338ca;
   --tip-bg: #ecfeff;
   --tip-border: #67e8f9;
+  --note-bg: #f5f3ff;
+  --note-border: #c4b5fd;
+  --note-text: #4c1d95;
   --warn-bg: #fff7ed;
   --warn-border: #fed7aa;
 }
@@ -167,6 +170,20 @@ li {
 }
 
 .tip strong {
+  display: inline;
+  margin: 0;
+}
+
+.note {
+  background: var(--note-bg);
+  border: 1px solid var(--note-border);
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1.75rem 0;
+  color: var(--note-text);
+}
+
+.note strong {
   display: inline;
   margin: 0;
 }
