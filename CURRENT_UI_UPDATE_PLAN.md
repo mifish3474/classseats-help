@@ -80,6 +80,7 @@ Current concerns:
 - The old section order implied creating a class before seating arrangements.
 - The current app recommends creating a seating arrangement before adding classes, students, and groups.
 - Signing-in content has been split into its own page.
+- Creating seating arrangements has been reorganized to start with the setup/onboarding action and now explains Tables / Groups, Single Seat — Grid, and Single Seat — Semicircle.
 - First-run/class creation screenshots and videos are likely old UI.
 - Adding students/import flow may have changed.
 - Grouping and seating arrangement setup likely needs current UI recapture.
