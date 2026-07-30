@@ -82,7 +82,7 @@ Current concerns:
 - Signing-in content has been split into its own page.
 - Creating seating arrangements has been reorganized to start with the setup/onboarding action and now explains Tables / Groups, Single Seat — Grid, and Single Seat — Semicircle.
 - First-run/class creation screenshots and videos are likely old UI.
-- Adding students/import flow may have changed.
+- Adding students/import article has been rewritten around the current setup guide and paste/import modal using new still images. Replacement video is still pending.
 - Grouping and seating arrangement setup likely needs current UI recapture.
 
 Planned updates:
