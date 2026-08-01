@@ -257,13 +257,13 @@ Planned updates:
 
 ### Student Tags
 
-Status: Landing page created; article pages not started
+Status: Landing page created; first article in progress
 
 Pages:
 - `public/student-tags/index.html`
+- `public/student-tags/creating-and-assigning-student-tags-individually/index.html`
 
 Planned article topics:
-- Creating and assigning student tags individually.
 - Importing student tags.
 - Assigning multiple tags with the Tag Matrix.
 - Showing Student Tags on Class Rosters.
@@ -271,7 +271,8 @@ Planned article topics:
 - Using Student Tags in Smart Grouping.
 
 Current concerns:
-- All article links are currently represented as coming-soon placeholders.
+- Creating and assigning student tags individually has still images and draft article copy in place. Short video demo is pending.
+- Remaining article links are currently represented as coming-soon placeholders.
 - Screenshots and workflows need to be captured in future sessions.
 
 Planned updates:
