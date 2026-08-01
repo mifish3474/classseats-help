@@ -257,15 +257,15 @@ Planned updates:
 
 ### Student Tags
 
-Status: Landing page created; first article in progress
+Status: Landing page created; first three articles built
 
 Pages:
 - `public/student-tags/index.html`
 - `public/student-tags/creating-and-assigning-student-tags-individually/index.html`
 - `public/student-tags/importing-student-tags/index.html`
+- `public/student-tags/assigning-multiple-tags-with-the-tag-matrix/index.html`
 
 Planned article topics:
-- Assigning multiple tags with the Tag Matrix.
 - Showing Student Tags on Class Rosters.
 - Viewing Student Tags on Seating Charts.
 - Using Student Tags in Smart Grouping.
@@ -273,6 +273,7 @@ Planned article topics:
 Current concerns:
 - Creating and assigning student tags individually has still images, article copy, and short video demo in place.
 - Importing student tags has still images extracted from video, article copy, and video demo in place.
+- Assigning multiple tags with the Tag Matrix has still images extracted from video, article copy, and video demo in place.
 - Remaining article links are currently represented as coming-soon placeholders.
 - Screenshots and workflows need to be captured in future sessions.
 
