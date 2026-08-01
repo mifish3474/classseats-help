@@ -42,11 +42,12 @@ This is the working checklist for updating the ClassSeats help site so screensho
 2. Grouping Students.
 3. Seating Arrangements and Seating Charts.
 4. Attendance and Daily Notes.
-5. Mobile.
-6. Printing Reports.
-7. Google Drive Sync.
-8. Students and Rosters.
-9. Index/category pages, search, and final QA.
+5. Student Tags.
+6. Mobile.
+7. Printing Reports.
+8. Google Drive Sync.
+9. Students and Rosters.
+10. Index/category pages, search, and final QA.
 
 ## Section Inventory
 
@@ -254,6 +255,30 @@ Planned updates:
 - Replace Students tab and Seating Criteria media if stale.
 - Confirm preferential seating instructions.
 
+### Student Tags
+
+Status: Landing page created; article pages not started
+
+Pages:
+- `public/student-tags/index.html`
+
+Planned article topics:
+- Creating and assigning student tags individually.
+- Importing student tags.
+- Assigning multiple tags with the Tag Matrix.
+- Showing Student Tags on Class Rosters.
+- Viewing Student Tags on Seating Charts.
+- Using Student Tags in Smart Grouping.
+
+Current concerns:
+- All article links are currently represented as coming-soon placeholders.
+- Screenshots and workflows need to be captured in future sessions.
+
+Planned updates:
+- Create each article page as the workflow is reviewed.
+- Add current UI screenshots and videos for each tags workflow.
+- Cross-link Student Tags articles with Students & Rosters, Seating Charts, and Grouping Students.
+
 ### Other Category Pages
 
 Status: Not started
@@ -265,6 +290,7 @@ Pages:
 - `public/privacy-data/index.html`
 - `public/search/index.html`
 - `public/student-notes/index.html`
+- `public/student-tags/index.html`
 
 Current concerns:
 - Mostly category/index pages with little or no media.
