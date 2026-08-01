@@ -271,7 +271,7 @@ Planned article topics:
 - Using Student Tags in Smart Grouping.
 
 Current concerns:
-- Creating and assigning student tags individually has still images and draft article copy in place. Short video demo is pending.
+- Creating and assigning student tags individually has still images, article copy, and short video demo in place.
 - Remaining article links are currently represented as coming-soon placeholders.
 - Screenshots and workflows need to be captured in future sessions.
 
