@@ -276,7 +276,8 @@ Current concerns:
 - Assigning multiple tags with the Tag Matrix has still images extracted from video, article copy, and video demo in place.
 - Showing Student Tags on Class Rosters has still images extracted from video, article copy, and video demo in place.
 - Viewing Student Tags on Seating Charts has still images extracted from video, article copy, and video demo in place.
-- Remaining article links are currently represented as coming-soon placeholders.
+- Using Student Tags in Smart Grouping / Tag Balancing has three draft examples prepared: Chatty, Interests, and Needs Support / Peer Leader. One final multi-tag balancing video is still pending.
+- Remaining article link is currently represented as a coming-soon placeholder.
 - Screenshots and workflows need to be captured in future sessions.
 
 Planned updates:
