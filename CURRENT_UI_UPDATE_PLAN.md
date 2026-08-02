@@ -266,9 +266,10 @@ Pages:
 - `public/student-tags/assigning-multiple-tags-with-the-tag-matrix/index.html`
 - `public/student-tags/showing-student-tags-on-class-rosters/index.html`
 - `public/student-tags/viewing-student-tags-on-seating-charts/index.html`
+- `public/student-tags/using-student-tags-in-smart-grouping/index.html`
 
 Planned article topics:
-- Using Student Tags in Smart Grouping.
+- None.
 
 Current concerns:
 - Creating and assigning student tags individually has still images, article copy, and short video demo in place.
@@ -276,8 +277,7 @@ Current concerns:
 - Assigning multiple tags with the Tag Matrix has still images extracted from video, article copy, and video demo in place.
 - Showing Student Tags on Class Rosters has still images extracted from video, article copy, and video demo in place.
 - Viewing Student Tags on Seating Charts has still images extracted from video, article copy, and video demo in place.
-- Using Student Tags in Smart Grouping / Tag Balancing has three draft examples prepared: Chatty, Interests, and Needs Support / Peer Leader. One final multi-tag balancing video is still pending.
-- Remaining article link is currently represented as a coming-soon placeholder.
+- Using Student Tags in Smart Grouping / Tag Balancing has still images extracted from four videos, article copy, video demos, and example jump links in place.
 - Screenshots and workflows need to be captured in future sessions.
 
 Planned updates:
