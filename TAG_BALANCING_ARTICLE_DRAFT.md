@@ -4,7 +4,7 @@
 
 Use Tag Balancing when you want ClassSeats to consider student tags while it creates groups. Tags can help you spread certain students across tables, build groups around shared interests, or create a more thoughtful mix of support needs and peer leaders.
 
-Tag Balancing is best-effort. ClassSeats will try to follow your tag rules while still respecting the group size, table choices, and other grouping settings you choose. After groups are generated, review them and make any teacher judgment changes you need.
+Tag Balancing is best-effort. ClassSeats will try to follow your tag rules while still respecting the group size, table choices, and other grouping settings you choose. Additionally, rules you set - such as gender balance, preferential seating, or keep apart rules always take priority to tag balancing.  After groups are generated, review them and make any teacher judgment-based changes you need.
 
 ## Before You Start
 
@@ -16,6 +16,14 @@ Then go to the **Groups** tab, choose your grouping settings, turn on **Table Ta
 
 Suggested caption:
 Use Table Tag Balancing from the Groups tab when you want student tags to guide how groups are created.
+
+**NOTE: You cannot use Tag Balancing and Student Preferences at the same time.  This is because, when used together, there are generally too many conflicts for the intent of the grouping to be satisfied.
+
+Examples: (jump links to each)
+-Spread chatty students across groups
+-Group students around shared interests
+-Mix support needs and peer leaders
+-Balance several tags at once
 
 ## Example 1: Spread Chatty Students Across Groups
 
@@ -91,12 +99,33 @@ See how support and peer leader tags can help create more balanced work groups.
 
 ## Example 4: Balance Several Tags at Once
 
-Placeholder for the fourth video.
+For project work, you may want each group to include a mix of student roles. In this example, students have tags such as **Project Manager**, **Engineer**, **Writer**, and **Illustrator**.
 
-Likely copy direction:
-Sometimes you may want ClassSeats to consider several classroom needs at the same time. For example, you might balance language support, work habits, academic support, and student interests in one grouping setup.
+Use **Spread evenly** when you want ClassSeats to try to distribute those roles across the groups. This gives you a stronger first draft when students will need different strengths at the same table.
 
-This is most helpful when you are not trying to solve one narrow issue. Instead, you are giving ClassSeats a fuller picture of your class so the groups start from a better first draft.
+Suggested image:
+`/_media/student-tags/tag-balancing/roles-tags.png`
+
+Suggested caption:
+Create or assign the role tags you want ClassSeats to use during grouping.
+
+Suggested image:
+`/_media/student-tags/tag-balancing/roles-rule.png`
+
+Suggested caption:
+Select several role tags in the same rule and set them to Spread evenly.
+
+Suggested image:
+`/_media/student-tags/tag-balancing/roles-results.png`
+
+Suggested caption:
+Review the generated groups to see how the selected roles were distributed.
+
+Suggested video:
+`/_media/student-tags/tag-balancing/tag-balancing-group-roles.mp4`
+
+Suggested video caption:
+See how several role tags can be balanced at once for project groups.
 
 ## Final Tip
 
