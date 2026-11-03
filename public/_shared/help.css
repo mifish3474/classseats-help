@@ -283,11 +283,36 @@ figure.media .media-frame {
 }
 
 figure.media img,
-figure.media video {
+figure.media video,
+figure.media iframe {
   display: block;
   width: 100%;
-  height: auto;
   border-radius: 10px;
+}
+
+figure.media img,
+figure.media video {
+  height: auto;
+}
+
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #0b0b0b;
+}
+
+figure.media .video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  border: 0;
+  border-radius: inherit;
 }
 
 figure.media img {
