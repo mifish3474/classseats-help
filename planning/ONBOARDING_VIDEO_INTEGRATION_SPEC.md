@@ -178,6 +178,7 @@ For each new YouTube link:
    - Video ID
    - Embedding is enabled
    - Thumbnail metadata is available
+   - The footage does not reveal student names, faces, or other identifying details without appropriate permission
 3. Confirm the intended article using the placement map above.
 4. Inspect the existing article structure and nearby media.
 5. Add one `Watch the walkthrough` section using the established embed pattern.
@@ -221,9 +222,9 @@ Expected Pagefind result:
 - Pages containing `data-pagefind-body` are indexed.
 - The command exits successfully.
 
-Pagefind writes generated files to `public/pagefind/`. That directory is not currently tracked. Remove the generated directory after local verification if it appears as untracked output; do not include it in a commit unless the project's deployment strategy is intentionally changed.
+Pagefind writes generated files to `public/pagefind/`. That directory is not currently tracked. Keep it in place through the local preview so the search page can load `/pagefind/pagefind-ui.js` and `/pagefind/pagefind-ui.css`. After the preview, remove it if it appears as untracked output; do not include it in a commit unless the project's deployment strategy is intentionally changed. Confirm that the Cloudflare Pages deployment runs `npm run build` before publishing `public/`, since search requires the generated files in the deployed site.
 
-Check Git state afterward:
+After the local preview and generated-file cleanup described below, check Git state:
 
 ```powershell
 git status --short
@@ -278,6 +279,7 @@ Verify:
 - Use the `youtube-nocookie.com` embed domain.
 - Prefer reviewed captions in YouTube Studio.
 - Do not put student-identifying information in titles, descriptions, thumbnails, or transcripts.
+- Before uploading each video as Unlisted, review its footage and audio for visible or spoken student names, faces, and other identifying details; remove or obscure them unless their inclusion is authorized.
 - Do not add tracking scripts solely for the video series.
 
 ## Design Constraints
