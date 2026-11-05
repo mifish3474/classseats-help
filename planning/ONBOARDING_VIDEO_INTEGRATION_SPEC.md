@@ -149,24 +149,19 @@ The user will upload videos gradually and provide their YouTube URLs. Extract th
 | 11 | Keep Apart and Together Groups | 2:16 | `public/grouping-students/how-do-i-keep-students-together-or-apart-in-groupings/index.html` | Existing article |
 | 12 | Collecting Student Picks | 3:14 | `public/grouping-students/how-do-i-collect-student-preferences/index.html` | Existing article |
 | 13 | Importing Student Picks | 3:16 | `public/grouping-students/how-do-i-enter-student-preferences/index.html` | Existing article |
-| 14 | Using Student Pictures in Grouping | 2:21 | New focused article under `public/grouping-students/` | Article needed |
-| 15 | Student Connections Tab | 2:29 | New focused article under `public/grouping-students/` | Article needed |
+| 14 | Using Student Picks in Grouping | 2:21 | `public/grouping-students/how-do-i-use-student-preferences-in-groupings/index.html` | Existing article |
+| 15 | Student Connections Tab | 2:29 | `public/grouping-students/how-do-i-use-student-connections/index.html` | New article |
 | 16 | Taking Attendance | 5:23 | Feature on `public/attendance-daily-notes/index.html`; link from desktop and mobile attendance articles | Landing-page treatment to design |
 | 17 | Flashcards and Audio | 2:05 | `public/mobile/how-do-i-use-flashcards-to-learn-student-names/index.html` | Existing article |
 
 ### New article suggestions
-
-For video 14, use a URL and title similar to:
-
-- URL: `/grouping-students/how-do-i-use-student-photos-in-groupings/`
-- H1: `How do I use student photos in groupings?`
 
 For video 15, use a URL and title similar to:
 
 - URL: `/grouping-students/how-do-i-use-student-connections/`
 - H1: `How do I use the Student Connections tab?`
 
-Before creating either article, inspect the video and confirm its actual terminology and scope with the user. Do not invent workflow details that are not demonstrated in the video or application.
+Before adding workflow details to a new article, inspect the video and confirm its actual terminology and scope with the user. Do not invent workflow details that are not demonstrated in the video or application.
 
 ## Per-Video Workflow
 
