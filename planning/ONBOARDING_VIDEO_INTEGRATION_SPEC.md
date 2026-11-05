@@ -144,7 +144,7 @@ The user will upload videos gradually and provide their YouTube URLs. Extract th
 | 6 | Full Screen Mode | 1:14 | `public/grouping-students/how-do-i-use-full-screen-view/index.html` | Existing article |
 | 7 | Printing Seating Charts | 1:02 | `public/seating-charts/how-do-i-print-my-seating-chart/index.html` | Existing article |
 | 8 | Printing a Roster | 0:59 | `public/printing-reports/how-do-i-print-a-roster/index.html` | Existing article |
-| 9 | Mobile Setup | 2:36 | `public/mobile/how-do-i-access-classseats-on-mobile/index.html` | Existing article |
+| 9 | Mobile Setup | 2:36 | `public/mobile/how-do-i-access-classseats-on-mobile/index.html` | Retired: video and browser setup became outdated when ClassSeats Companion launched as an app |
 | 10 | Taking Student Pictures | 3:50 | `public/mobile/how-do-i-add-student-photos/index.html` | Existing article |
 | 11 | Keep Apart and Together Groups | 2:16 | `public/grouping-students/how-do-i-keep-students-together-or-apart-in-groupings/index.html` | Existing article |
 | 12 | Collecting Student Picks | 3:14 | `public/grouping-students/how-do-i-collect-student-preferences/index.html` | Existing article |
