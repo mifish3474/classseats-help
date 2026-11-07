@@ -295,9 +295,9 @@ The library:
 - Uses linked cards rather than loading every iframe at once.
 - Groups videos into getting started, seating and printing, student picks and connections, and everyday classroom tools.
 - Opens one video per focused player view, with a link to its related help article.
-- Shows each video's duration.
+- Shows each video's duration and a locally hosted thumbnail from its YouTube video.
 
-To add a future video, add a card to the library index and a matching entry to `public/video-guides/videos.js`.
+To add a future video, add a card to the library index, a matching entry to `public/video-guides/videos.js`, and an optimized 16:9 thumbnail at `public/video-guides/thumbnails/SLUG.jpg`. The card's image path must use the same slug.
 
 ## Definition of Done
 
