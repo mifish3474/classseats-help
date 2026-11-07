@@ -284,24 +284,20 @@ Verify:
 - Do not redesign the global shell.
 - Use the existing 920px article width and `.media` presentation.
 - Keep videos full-width within the article rather than placing long narrated videos in the 520px inline-media column.
-- Avoid embedding all 17 videos on one page. Category or onboarding pages should link to canonical article embeds rather than loading every player at once.
+- Avoid embedding all videos on one page. The video library links to a focused player that loads only the selected video.
 
-## Future Video Hub
+## Video Tutorial Library
 
-After several videos are integrated, consider adding a lightweight `Video walkthroughs` section to `public/getting-started/index.html` or a dedicated `/getting-started/video-guides/` page.
+The standalone library lives at `public/video-guides/index.html`, with focused playback at `public/video-guides/watch/index.html`. The outdated Mobile Setup video is retired; the library includes the 16 current videos.
 
-If created, the hub should:
+The library:
 
-- Use linked cards or thumbnails rather than loading 17 iframes.
-- Group videos into:
-  - First setup
-  - Seating and grouping
-  - Student preferences and connections
-  - Everyday classroom tools
-- Link each item to the canonical help article containing the player.
-- Show the duration and indicate that the item is a video.
+- Uses linked cards rather than loading every iframe at once.
+- Groups videos into getting started, seating and printing, student picks and connections, and everyday classroom tools.
+- Opens one video per focused player view, with a link to its related help article.
+- Shows each video's duration.
 
-This hub is not yet implemented and should be discussed with the user after more YouTube links are available.
+To add a future video, add a card to the library index and a matching entry to `public/video-guides/videos.js`.
 
 ## Definition of Done
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Watch a ClassSeats video tutorial in a focused player." />
+  <title>Watch a Video | ClassSeats Video Tutorials</title>
+  <link rel="icon" href="/assets/icon-192.png" />
+  <link rel="stylesheet" href="/_shared/help.css" />
+  <link rel="stylesheet" href="/video-guides/video-guides.css" />
+</head>
+<body class="video-hub-body">
+  <div class="hub-shell watch-shell">
+    <header class="hub-header">
+      <a class="hub-brand" href="/video-guides/" aria-label="ClassSeats Video Tutorials home">
+        <img src="/assets/icon-192.png" alt="" width="42" height="42" />
+        <span>ClassSeats<small>Video Tutorials</small></span>
+      </a>
+      <a class="hub-header__link" href="/video-guides/">All videos →</a>
+    </header>
+
+    <main class="watch-main">
+      <a class="back-link" href="/video-guides/">← Back to all videos</a>
+
+      <div id="watch-content" hidden>
+        <h1 id="watch-title"></h1>
+        <p class="watch-intro" id="watch-duration"></p>
+        <div class="watch-frame">
+          <iframe id="watch-player" title="ClassSeats video tutorial" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="watch-after">
+          <span>Take your time. You can pause and replay any part.</span>
+          <a id="watch-guide" href="/">Read the related help article →</a>
+        </div>
+      </div>
+
+      <div id="watch-unavailable" hidden>
+        <h1>Video not found</h1>
+        <p class="watch-intro">Choose a tutorial from the video library.</p>
+        <a class="hub-primary-link" href="/video-guides/">Browse videos →</a>
+      </div>
+      <noscript><p>To play a video here, enable JavaScript. You can also browse the <a href="/video-guides/">video library</a>.</p></noscript>
+    </main>
+
+    <footer class="hub-footer">
+      <p>Need a different kind of help?</p>
+      <a class="hub-footer__main" href="https://help.classseats.app/">More ClassSeats Help <span aria-hidden="true">&nbsp;→</span></a>
+      <a class="hub-footer__secondary" href="/contact/#request-video">Contact / Request a Video</a>
+      <span class="hub-footer__address">support@classseats.app</span>
+    </footer>
+    <p class="hub-legal">ClassSeats&trade; is a product of ClassWare Solutions, LLC. &copy; 2026 ClassWare Solutions, LLC.</p>
+  </div>
+  <script src="/video-guides/videos.js" defer></script>
+</body>
+</html>
